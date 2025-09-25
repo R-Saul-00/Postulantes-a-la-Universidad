@@ -16,7 +16,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
      */
     public InicioDeSesion() {
         initComponents();
-  
+        //holaaaaaaaa
     }
 
     /**
