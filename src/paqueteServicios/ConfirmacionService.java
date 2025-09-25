@@ -2,7 +2,8 @@ package paqueteServicios;
 
 /**
  * Clase para manejar confirmaciones del sistema
- * Proporciona funcionalidad para mostrar mensajes de confirmación con delays
+ * Proporciona funcionalidad para mostrar mensajes de confirmación con delays 
+ * 
  * @author Marca
  */
 public class ConfirmacionService {
@@ -21,13 +22,13 @@ public class ConfirmacionService {
             System.err.println("Error en el proceso: " + e.getMessage());
         }
         
-        // mensaje de confirmación
+        // Mostrar mensaje de confirmación
         System.out.println("Registro confirmado exitosamente");
-        System.out.println("Se ha enviado una confirmacion a su correo electronico");
+        System.out.println("Se ha enviado una confirmación a su correo electronico");
     }
     
     /**
-     * Método mensaje de error
+     * Método sobrecargado para mensaje personalizado
      * @param mensaje Mensaje personalizado de confirmación
      */
     public void mostrarConfirmacionRegistro(String mensaje) {
@@ -39,7 +40,7 @@ public class ConfirmacionService {
             System.err.println("Error en el proceso: " + e.getMessage());
         }
         
-        System.out.println(mensaje + "");
+        System.out.println(mensaje + " ");
     }
     
     /**
