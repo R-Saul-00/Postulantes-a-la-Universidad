@@ -49,8 +49,85 @@
         </Property>
       </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="PaseoAut" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="IniciarSesion" min="-2" pref="280" max="-2" attributes="0"/>
+                      <Component id="LogoUmss" min="-2" pref="280" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="TituloCorreo" min="-2" pref="180" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="IngresarCorreo" min="-2" pref="240" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="jSeparator2" min="-2" pref="230" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="TituloContrasenia" min="-2" pref="180" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="IngresarContrasenia" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="jSeparator1" min="-2" pref="230" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                          <Component id="TextoNuevo" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
+                          <Component id="Registro" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="PaseoAut" min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
+                          <Component id="IniciarSesion" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="LogoUmss" min="-2" pref="120" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="TituloCorreo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
+                  <Component id="IngresarCorreo" min="-2" pref="30" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="TituloContrasenia" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
+                  <Component id="IngresarContrasenia" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                  <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="TextoNuevo" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="Registro" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="IniciarSesion">
@@ -62,11 +139,6 @@
             <Property name="text" type="java.lang.String" value="INICIAR SESI&#xd3;N"/>
             <Property name="name" type="java.lang.String" value="INICIAR SESI&#xd3;N" noResource="true"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="520" y="120" width="280" height="100"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="PaseoAut">
           <Properties>
@@ -77,11 +149,6 @@
               <Color id="Cursor Por defecto"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="520" height="500"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="TituloContrasenia">
           <Properties>
@@ -92,11 +159,6 @@
             <Property name="text" type="java.lang.String" value="CONTRASE&#xd1;A"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="300" width="180" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator1">
           <Properties>
@@ -107,11 +169,6 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="350" width="230" height="10"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="TituloCorreo">
           <Properties>
@@ -122,11 +179,6 @@
             <Property name="text" type="java.lang.String" value="CORREO ELECTRONICO"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="220" width="180" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="IngresarCorreo">
           <Properties>
@@ -142,11 +194,6 @@
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="IngresarCorreoMousePressed"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IngresarCorreoActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="240" width="240" height="30"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator2">
           <Properties>
@@ -157,11 +204,6 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="270" width="230" height="10"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JPasswordField" name="IngresarContrasenia">
           <Properties>
@@ -177,11 +219,6 @@
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="IngresarContraseniaMousePressed"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IngresarContraseniaActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="540" y="330" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="TextoNuevo">
           <Properties>
@@ -190,11 +227,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&#xbf;Postulante nuevo?"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="560" y="460" width="-1" height="30"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
@@ -207,11 +239,6 @@
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel1MouseEntered"/>
             <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jPanel1MouseExited"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="580" y="370" width="130" height="30"/>
-            </Constraint>
-          </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -262,11 +289,6 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="RegistroMouseClicked"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="690" y="460" width="-1" height="30"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="LogoUmss">
           <Properties>
@@ -274,11 +296,6 @@
               <Image iconType="2" name="C:\Postulantes-a-la-Universidad\src\ImagenesDeInterfaces\InicioDeSesion\LogoUmss.png"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="520" y="20" width="280" height="120"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>

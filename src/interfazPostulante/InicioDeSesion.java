@@ -2,6 +2,7 @@
 package interfazPostulante;
 
 import java.awt.Color;
+import javax.swing.JFrame;
 
 /**
  *
@@ -16,7 +17,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
      */
     public InicioDeSesion() {
         initComponents();
-        //holaaaaaaaa
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -49,33 +50,27 @@ public class InicioDeSesion extends javax.swing.JFrame {
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
         bg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         IniciarSesion.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         IniciarSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         IniciarSesion.setText("INICIAR SESIÓN");
         IniciarSesion.setName("INICIAR SESIÓN"); // NOI18N
-        bg.add(IniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 280, 100));
 
         PaseoAut.setIcon(new javax.swing.ImageIcon("C:\\Postulantes-a-la-Universidad\\src\\ImagenesDeInterfaces\\InicioDeSesion\\paseoUniversitario.jpg")); // NOI18N
         PaseoAut.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        bg.add(PaseoAut, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 500));
 
         TituloContrasenia.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         TituloContrasenia.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         TituloContrasenia.setText("CONTRASEÑA");
         TituloContrasenia.setToolTipText("");
-        bg.add(TituloContrasenia, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 180, -1));
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
-        bg.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 230, 10));
 
         TituloCorreo.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         TituloCorreo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         TituloCorreo.setText("CORREO ELECTRONICO");
         TituloCorreo.setToolTipText("");
-        bg.add(TituloCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 180, -1));
 
         IngresarCorreo.setForeground(new java.awt.Color(204, 204, 204));
         IngresarCorreo.setText("Ingrese su correo electronico");
@@ -90,11 +85,9 @@ public class InicioDeSesion extends javax.swing.JFrame {
                 IngresarCorreoActionPerformed(evt);
             }
         });
-        bg.add(IngresarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 240, 30));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-        bg.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 230, 10));
 
         IngresarContrasenia.setForeground(new java.awt.Color(204, 204, 204));
         IngresarContrasenia.setText("************");
@@ -109,11 +102,9 @@ public class InicioDeSesion extends javax.swing.JFrame {
                 IngresarContraseniaActionPerformed(evt);
             }
         });
-        bg.add(IngresarContrasenia, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, -1, -1));
 
         TextoNuevo.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         TextoNuevo.setText("¿Postulante nuevo?");
-        bg.add(TextoNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 460, -1, 30));
 
         jPanel1.setBackground(new java.awt.Color(196, 95, 95));
         jPanel1.setRequestFocusEnabled(false);
@@ -143,8 +134,6 @@ public class InicioDeSesion extends javax.swing.JFrame {
             .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 370, 130, 30));
-
         Registro.setBackground(new java.awt.Color(196, 95, 95));
         Registro.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         Registro.setForeground(new java.awt.Color(196, 95, 95));
@@ -155,10 +144,73 @@ public class InicioDeSesion extends javax.swing.JFrame {
                 RegistroMouseClicked(evt);
             }
         });
-        bg.add(Registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 460, -1, 30));
 
         LogoUmss.setIcon(new javax.swing.ImageIcon("C:\\Postulantes-a-la-Universidad\\src\\ImagenesDeInterfaces\\InicioDeSesion\\LogoUmss.png")); // NOI18N
-        bg.add(LogoUmss, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 280, 120));
+
+        javax.swing.GroupLayout bgLayout = new javax.swing.GroupLayout(bg);
+        bg.setLayout(bgLayout);
+        bgLayout.setHorizontalGroup(
+            bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bgLayout.createSequentialGroup()
+                .addComponent(PaseoAut)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LogoUmss, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(TituloCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(IngresarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(TituloContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(IngresarContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(TextoNuevo)
+                        .addGap(13, 13, 13)
+                        .addComponent(Registro))))
+        );
+        bgLayout.setVerticalGroup(
+            bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PaseoAut)
+            .addGroup(bgLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LogoUmss, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(TituloCorreo)
+                .addGap(3, 3, 3)
+                .addComponent(IngresarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(TituloContrasenia)
+                .addGap(13, 13, 13)
+                .addComponent(IngresarContrasenia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TextoNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Registro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
