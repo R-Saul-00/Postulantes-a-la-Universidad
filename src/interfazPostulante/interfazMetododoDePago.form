@@ -118,7 +118,7 @@
                               <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="62" max="32767" attributes="0"/>
+                      <EmptySpace pref="74" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -184,7 +184,7 @@
                 <Component class="javax.swing.JButton" name="jButton2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\sisinfo\makeitmeme_P9DfR.jpeg"/>
+                      <Image iconType="2" name="C:\Postulantes-a-la-Universidad\src\ImagenesDeInterfaces\MetodoPago\banco.jpeg"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -225,7 +225,7 @@
                                   <Component id="jButton3" min="-2" pref="110" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="18" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -244,7 +244,7 @@
                 <Component class="javax.swing.JButton" name="jButton3">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="C:\sisinfo\Sin t&#xed;tulo.jpg"/>
+                      <Image iconType="2" name="C:\Postulantes-a-la-Universidad\src\ImagenesDeInterfaces\MetodoPago\imagenqr.jpg"/>
                     </Property>
                   </Properties>
                 </Component>
