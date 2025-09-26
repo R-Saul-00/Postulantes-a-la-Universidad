@@ -71,7 +71,7 @@
         <Component class="javax.swing.JLabel" name="PaseoAut">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/interfazPostulante/paseoUniversitario.jpg"/>
+              <Image iconType="2" name="C:\Postulantes-a-la-Universidad\src\ImagenesDeInterfaces\InicioDeSesion\paseoUniversitario.jpg"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Cursor Por defecto"/>
@@ -271,7 +271,7 @@
         <Component class="javax.swing.JLabel" name="LogoUmss">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/interfazPostulante/LogoUmss.png"/>
+              <Image iconType="2" name="C:\Postulantes-a-la-Universidad\src\ImagenesDeInterfaces\InicioDeSesion\LogoUmss.png"/>
             </Property>
           </Properties>
           <Constraints>

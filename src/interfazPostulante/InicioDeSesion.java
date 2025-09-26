@@ -57,7 +57,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
         IniciarSesion.setName("INICIAR SESIÓN"); // NOI18N
         bg.add(IniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 280, 100));
 
-        PaseoAut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazPostulante/paseoUniversitario.jpg"))); // NOI18N
+        PaseoAut.setIcon(new javax.swing.ImageIcon("C:\\Postulantes-a-la-Universidad\\src\\ImagenesDeInterfaces\\InicioDeSesion\\paseoUniversitario.jpg")); // NOI18N
         PaseoAut.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         bg.add(PaseoAut, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 500));
 
@@ -157,7 +157,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
         });
         bg.add(Registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 460, -1, 30));
 
-        LogoUmss.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazPostulante/LogoUmss.png"))); // NOI18N
+        LogoUmss.setIcon(new javax.swing.ImageIcon("C:\\Postulantes-a-la-Universidad\\src\\ImagenesDeInterfaces\\InicioDeSesion\\LogoUmss.png")); // NOI18N
         bg.add(LogoUmss, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 20, 280, 120));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
