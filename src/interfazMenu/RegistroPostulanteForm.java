@@ -1,5 +1,5 @@
 
-package interfazMenu;
+package newpackage;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
