@@ -163,7 +163,17 @@ public class menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+         try {
+            MenuOli menuOli = new MenuOli();
+            menuOli.setVisible(true);
+            menuOli.setLocationRelativeTo(null); // Centrar la ventana
+            this.dispose(); // Cerrar la ventana actual
+        } catch (Exception e) {
+            logger.log(java.util.logging.Level.SEVERE, "Error al abrir MenuOli", e);
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                "Error al abrir la ventana de registro de documentación: " + e.getMessage(),
+                "Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
