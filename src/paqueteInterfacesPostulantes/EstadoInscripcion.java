@@ -24,8 +24,10 @@ public class EstadoInscripcion extends javax.swing.JFrame {
      */
     public EstadoInscripcion(Postulante postulante) {
     initComponents();
+    
     this.objPostulante = postulante;
     cargarDatosPostulante();
+    asignarAsiento();
     
     /*
     actualizarCheckBachiller(true);
@@ -67,6 +69,7 @@ private void cargarDatosPostulante() {
             actualizarCheckPago(false);
         }
         mensajeExito();
+        asignarAsiento();
     } else {
         JOptionPane.showMessageDialog(
             this,
@@ -89,6 +92,7 @@ private void cargarDatosPostulante() {
         jSeparator3 = new javax.swing.JSeparator();
         CheckCI = new javax.swing.JLabel();
         MensajeCI = new javax.swing.JLabel();
+        MensajeExito = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -117,9 +121,10 @@ private void cargarDatosPostulante() {
         CheckBachiller = new javax.swing.JLabel();
         MensajePago = new javax.swing.JLabel();
         MensajeBachiller = new javax.swing.JLabel();
-        MensajeExito = new javax.swing.JLabel();
         Retroceder = new javax.swing.JLabel();
         Actualizar = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        Asiento = new javax.swing.JLabel();
 
         CheckCI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/EstadoInscripcion/Check.png"))); // NOI18N
 
@@ -127,6 +132,9 @@ private void cargarDatosPostulante() {
         MensajeCI.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         MensajeCI.setForeground(new java.awt.Color(102, 102, 102));
         MensajeCI.setText("jLabel24");
+
+        MensajeExito.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
+        MensajeExito.setForeground(new java.awt.Color(0, 153, 0));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -228,16 +236,16 @@ private void cargarDatosPostulante() {
 
         jLabel18.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel18.setText("Pago de Valorado :");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 630, 450, -1));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, 450, -1));
 
         jLabel19.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         jLabel19.setText("Titulo de Bachiller :");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 450, -1));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 333, 950, 10));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 680, 950, 20));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 950, 20));
 
         CheckPago.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/EstadoInscripcion/Uncheck.png"))); // NOI18N
-        jPanel1.add(CheckPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 640, 40, 40));
+        jPanel1.add(CheckPago, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 500, 40, 40));
 
         CheckBachiller.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/EstadoInscripcion/Uncheck.png"))); // NOI18N
         jPanel1.add(CheckBachiller, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 290, 40, 40));
@@ -246,17 +254,13 @@ private void cargarDatosPostulante() {
         MensajePago.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         MensajePago.setForeground(new java.awt.Color(102, 102, 102));
         MensajePago.setText("jLabel24");
-        jPanel1.add(MensajePago, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 650, -1, -1));
+        jPanel1.add(MensajePago, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 510, -1, -1));
 
         MensajeBachiller.setBackground(new java.awt.Color(51, 51, 51));
         MensajeBachiller.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         MensajeBachiller.setForeground(new java.awt.Color(102, 102, 102));
         MensajeBachiller.setText("jLabel24");
         jPanel1.add(MensajeBachiller, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 300, -1, -1));
-
-        MensajeExito.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
-        MensajeExito.setForeground(new java.awt.Color(0, 153, 0));
-        jPanel1.add(MensajeExito, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 470, -1, -1));
 
         Retroceder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/EstadoInscripcion/Retroceder.png"))); // NOI18N
         Retroceder.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -273,6 +277,15 @@ private void cargarDatosPostulante() {
             }
         });
         jPanel1.add(Actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 90, 110));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
+        jLabel3.setText("Su asiento designado para el examen es :");
+        jLabel3.setToolTipText("");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 640, 840, 110));
+
+        Asiento.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
+        Asiento.setText("jLabel");
+        jPanel1.add(Asiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 660, 640, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -371,8 +384,18 @@ private void cargarDatosPostulante() {
         }
         cargarDatosPostulante();
         mensajeExito();
+        asignarAsiento();
+        
+
     }
 }
+   private void asignarAsiento(){
+    if(MensajeBachiller.getText().equals("")&&MensajePago.getText().equals("")){
+        Asiento.setText(String.valueOf(objRegistroDocumentacion.getIntIdRegistroDoc()));
+    }else{
+    Asiento.setText("Ninguno");
+    }
+    }
 
 
 
@@ -401,6 +424,7 @@ private void cargarDatosPostulante() {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Actualizar;
     private javax.swing.JLabel Apellido;
+    private javax.swing.JLabel Asiento;
     private javax.swing.JLabel CI;
     private javax.swing.JLabel Carrera;
     private javax.swing.JLabel CheckBachiller;
@@ -424,6 +448,7 @@ private void cargarDatosPostulante() {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
