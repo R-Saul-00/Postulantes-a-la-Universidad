@@ -182,7 +182,23 @@ public class Menu extends javax.swing.JFrame {
     }
     
     private void btnEstadoDeInscripcionActionPerformed(java.awt.event.ActionEvent evt) {
+    if (objPostulante != null) {
+        this.dispose(); // cerrar el menú actual
+
+        // Abrir la ventana de EstadoInscripcion pasando el objeto Postulante
+        SwingUtilities.invokeLater(() -> {
+            EstadoInscripcion ventanaEstado = new EstadoInscripcion(objPostulante);
+            ventanaEstado.setVisible(true);
+        });
+
+    } else {
+        JOptionPane.showMessageDialog(this,
+            "No se pudo abrir la ventana. Postulante no definido.",
+            "Error",
+            JOptionPane.ERROR_MESSAGE);
     }
+}
+
 
     public static void main(String args[]) {
         try {

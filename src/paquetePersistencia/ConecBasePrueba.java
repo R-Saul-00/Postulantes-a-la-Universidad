@@ -3,9 +3,9 @@ package paquetePersistencia;
 import java.sql.*;
 
 public class ConecBasePrueba {
-    private final static String STRURL = "jdbc:mysql://127.0.0.1:3306/sistemas_info_2";
-    private final static String STRUSUARIO = "PRUEBA";
-    private final static String STRCONTRASENIA = "prueba1";
+    private final static String STRURL = "jdbc:mysql://127.0.0.1:3306/postulante";
+    private final static String STRUSUARIO = "prueba1";
+    private final static String STRCONTRASENIA = "9e%Lc!mRRQPmHqMiEDSxhF";
     
     public static Connection conectar(){
         Connection conConector = null;

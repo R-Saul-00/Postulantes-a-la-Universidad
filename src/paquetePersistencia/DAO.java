@@ -224,4 +224,38 @@ public class DAO {
         }
         return null;
     }
+    public Postulante obtenerPostulantePorId(int intIdUsuario) {
+    String strConsulta = "SELECT ID_Usuario, Correo_Electronico, Nombre, Apellidos, Numero_CI, Fecha_Nacimiento FROM usuario WHERE ID_Usuario = ?";
+
+    try (Connection objConexion = ConecBasePrueba.conectar();
+         PreparedStatement objPreparedStatement = objConexion.prepareStatement(strConsulta)) {
+
+        objPreparedStatement.setInt(1, intIdUsuario);
+
+        try (ResultSet objResultSet = objPreparedStatement.executeQuery()) {
+            if (objResultSet.next()) {
+                int id = objResultSet.getInt("ID_Usuario");
+                String correo = objResultSet.getString("Correo_Electronico");
+                String nombre = objResultSet.getString("Nombre");
+                String apellido = objResultSet.getString("Apellidos");
+                String ci = objResultSet.getString("Numero_CI");
+                String fecha = objResultSet.getString("Fecha_Nacimiento");
+
+                Postulante postulante = new Postulante(id, correo, nombre, apellido, ci, fecha);
+
+                // Cargar registro de documentación si existe
+                RegistroDocumentacion registro = obtenerRegistroDocumentacionPorIdUsuario(id);
+                if (registro != null) {
+                    postulante.setObjRegistroDocumentacion(registro);
+                }
+
+                return postulante;
+            }
+        }
+    } catch (SQLException e) {
+        System.err.println("Error al obtener el postulante por ID: " + e.getMessage());
+    }
+    return null;
+}
+
 }
