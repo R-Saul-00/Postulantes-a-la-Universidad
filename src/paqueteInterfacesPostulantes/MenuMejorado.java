@@ -20,7 +20,7 @@ public class MenuMejorado extends javax.swing.JFrame {
      */
     public MenuMejorado() {
         initComponents();
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -33,7 +33,6 @@ public class MenuMejorado extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -41,32 +40,32 @@ public class MenuMejorado extends javax.swing.JFrame {
         botonMetodosDePago = new javax.swing.JLabel();
         botonEstadoDeInscripcion = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1600, 815));
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1920, 1060));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/paseoUmssPrueba.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 790, 1060));
-
         jPanel2.setBackground(new java.awt.Color(0, 57, 117));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/logoUmssDorado.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 130, 130));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 85)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 60)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Menú Principal");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 690, 140));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 530, 90));
 
-        botonSalir.setFont(new java.awt.Font("Segoe UI Black", 0, 52)); // NOI18N
+        botonSalir.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         botonSalir.setForeground(new java.awt.Color(239, 184, 16));
         botonSalir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         botonSalir.setText("Salir");
@@ -83,9 +82,9 @@ public class MenuMejorado extends javax.swing.JFrame {
                 botonSalirMouseExited(evt);
             }
         });
-        jPanel2.add(botonSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 700, 590, 100));
+        jPanel2.add(botonSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, 430, 80));
 
-        botonMetodosDePago.setFont(new java.awt.Font("Segoe UI Black", 0, 52)); // NOI18N
+        botonMetodosDePago.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         botonMetodosDePago.setForeground(new java.awt.Color(239, 184, 16));
         botonMetodosDePago.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         botonMetodosDePago.setText("Métodos de Pago");
@@ -102,9 +101,9 @@ public class MenuMejorado extends javax.swing.JFrame {
                 botonMetodosDePagoMouseExited(evt);
             }
         });
-        jPanel2.add(botonMetodosDePago, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 590, 100));
+        jPanel2.add(botonMetodosDePago, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 430, 80));
 
-        botonEstadoDeInscripcion.setFont(new java.awt.Font("Segoe UI Black", 0, 52)); // NOI18N
+        botonEstadoDeInscripcion.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
         botonEstadoDeInscripcion.setForeground(new java.awt.Color(239, 184, 16));
         botonEstadoDeInscripcion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         botonEstadoDeInscripcion.setText("Estado De Inscripción");
@@ -121,16 +120,10 @@ public class MenuMejorado extends javax.swing.JFrame {
                 botonEstadoDeInscripcionMouseExited(evt);
             }
         });
-        jPanel2.add(botonEstadoDeInscripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 490, 590, 100));
+        jPanel2.add(botonEstadoDeInscripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 440, 430, 80));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/salir.png"))); // NOI18N
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 660, 150, 150));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/metodoPago.png"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 220, 150, 150));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/estado.png"))); // NOI18N
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 430, 150, 150));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 590, 100, 100));
 
         jPanel3.setBackground(new java.awt.Color(239, 184, 16));
 
@@ -142,22 +135,32 @@ public class MenuMejorado extends javax.swing.JFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1060, Short.MAX_VALUE)
+            .addGap(0, 820, Short.MAX_VALUE)
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 0, 30, 1060));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 0, 30, 820));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1130, 1060));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/metodoPago.png"))); // NOI18N
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, 100, 100));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/estado.png"))); // NOI18N
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 420, 100, 100));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Menu/paseoUmssPrueba.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 0, 620, 820));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1600, 815));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1600, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
         );
 
         pack();

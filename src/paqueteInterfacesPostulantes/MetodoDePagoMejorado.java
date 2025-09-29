@@ -21,7 +21,7 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
      */
     public MetodoDePagoMejorado() {
         initComponents();
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -46,7 +46,6 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         botonConfirmar = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
@@ -54,11 +53,15 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jPanel3 = new javax.swing.JPanel();
         Retroceder = new javax.swing.JLabel();
+        jSeparator4 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(0, 57, 117));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1920, 1060));
+        jPanel1.setMaximumSize(new java.awt.Dimension(1600, 815));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1600, 815));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(1600, 815));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         botonBanco.setBackground(new java.awt.Color(0, 57, 117));
@@ -71,7 +74,7 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
                 botonBancoMouseClicked(evt);
             }
         });
-        jPanel1.add(botonBanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, 280, 280));
+        jPanel1.add(botonBanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 180, 180));
 
         botonQR.setBackground(new java.awt.Color(0, 57, 117));
         botonQR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -83,46 +86,47 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
                 botonQRMouseClicked(evt);
             }
         });
-        jPanel1.add(botonQR, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 370, 280, 280));
+        jPanel1.add(botonQR, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 180, 180));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 85)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 60)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Metodos de Pago");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 780, 150));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 580, 90));
 
         jPanel2.setBackground(new java.awt.Color(183, 13, 30));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1600, 815));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/metodos de pago/LogoUmssAzul-removebg-preview.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 370, 370));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 300, 250));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/metodos de pago/hombre.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 750, 220, 250));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 660, 120, 120));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 27)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel9.setText("\nun metodo de pago");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 540, 280, 50));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 510, 190, 50));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 27)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel8.setText("Por favor seleccione\n");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 480, 280, 40));
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 470, 200, 40));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/metodos de pago/burrbuja (1).png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 380, 340));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 240, 240));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1410, 0, 520, 1060));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 0, 330, 815));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(239, 184, 16));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Pago Online ");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 650, 470, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, 230, -1));
 
         botonConfirmar.setBackground(new java.awt.Color(183, 13, 30));
         botonConfirmar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -138,36 +142,35 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
         });
         botonConfirmar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Confirmar");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botonConfirmar.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 70));
+        botonConfirmar.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 40));
 
-        jPanel1.add(botonConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 880, 460, 70));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 720, 470, 20));
+        jPanel1.add(botonConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 660, 230, 40));
 
-        jLabel13.setFont(new java.awt.Font("Segoe UI Black", 0, 48)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(239, 184, 16));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Deposito Bancario");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 650, 470, -1));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 720, 470, 20));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, 330, -1));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 550, 260, 20));
 
         jPanel4.setBackground(new java.awt.Color(239, 184, 16));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 0, 30, 1060));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 0, 20, 850));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 184, 16));
         jLabel3.setText("Monto Total : 350 Bs");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 430, 60));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 260, 60));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 1350, 30));
 
         jPanel3.setBackground(new java.awt.Color(239, 184, 16));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 1060));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 20, 830));
 
         Retroceder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/metodos de pago/Retroceder.png"))); // NOI18N
         Retroceder.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -176,19 +179,20 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
                 RetrocederMouseClicked(evt);
             }
         });
-        jPanel1.add(Retroceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+        jPanel1.add(Retroceder, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 100, 90));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, 350, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1459, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -267,8 +271,8 @@ public class MetodoDePagoMejorado extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     // End of variables declaration//GEN-END:variables
 }
