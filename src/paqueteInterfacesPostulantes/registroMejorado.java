@@ -31,7 +31,7 @@ public class registroMejorado extends javax.swing.JFrame {
         javax.swing.SwingUtilities.invokeLater(() -> {
         jPanel1.requestFocusInWindow();
         });
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
     
     /**
@@ -67,7 +67,7 @@ public class registroMejorado extends javax.swing.JFrame {
         jSeparator8 = new javax.swing.JSeparator();
         ingresarApellidos = new javax.swing.JTextField();
         ingresarContrasena = new javax.swing.JPasswordField();
-        pnlBotonRegistrar = new javax.swing.JPanel();
+        pnlRegistrar = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -78,6 +78,9 @@ public class registroMejorado extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1600, 780));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(1600, 780));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 57, 117));
@@ -85,50 +88,50 @@ public class registroMejorado extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes de interfaces/Registro/LogoUmssAzul.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 380, 390));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 350, 370));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 1060));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 1060));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 62)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 52)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Registro De Postulante");
         jLabel4.setToolTipText("");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 40, 770, 100));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 133, 860, 20));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 720, 110));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 130, 1200, 20));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
         jLabel5.setText("Informacion Personal :");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 530, 80));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 243, 520, 40));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 160, 530, 80));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 220, 520, 40));
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel6.setText("NOMBRE");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 350, 130, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, 130, -1));
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel7.setText("APELLIDOS");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel8.setText("NÚMERO DE CARNET");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 350, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 280, -1, -1));
 
-        ingresarContraseña.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        ingresarContraseña.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         ingresarContraseña.setText("CONTRASEÑA");
-        jPanel1.add(ingresarContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 650, 260, -1));
+        jPanel1.add(ingresarContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 500, 260, -1));
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel10.setText("CORREO ELECTRONICO");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 490, 430, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 380, 430, -1));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel11.setText("FECHA DE NACIMIENTO");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 650, -1, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 490, -1, -1));
 
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 750, 500, 10));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 570, 320, 10));
 
-        ingresarNombre.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarNombre.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarNombre.setForeground(new java.awt.Color(204, 204, 204));
         ingresarNombre.setText("Ingrese su nombre completo");
         ingresarNombre.setBorder(null);
@@ -137,45 +140,45 @@ public class registroMejorado extends javax.swing.JFrame {
                 ingresarNombreMouseClicked(evt);
             }
         });
-        jPanel1.add(ingresarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 400, 460, 40));
+        jPanel1.add(ingresarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 460, 40));
 
-        ingresarFechaDeNacimiento.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarFechaDeNacimiento.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarFechaDeNacimiento.setForeground(new java.awt.Color(204, 204, 204));
         ingresarFechaDeNacimiento.setText("Ingrese su nombre completo");
         ingresarFechaDeNacimiento.setBorder(null);
-        jPanel1.add(ingresarFechaDeNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 700, 460, 40));
+        jPanel1.add(ingresarFechaDeNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 520, 460, 40));
 
-        ingresarCI.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarCI.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarCI.setForeground(new java.awt.Color(204, 204, 204));
         ingresarCI.setText("Ingrese su nombre completo");
         ingresarCI.setBorder(null);
-        jPanel1.add(ingresarCI, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 400, 460, 40));
+        jPanel1.add(ingresarCI, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 310, 460, 40));
 
-        ingresarCorreo.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarCorreo.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarCorreo.setForeground(new java.awt.Color(204, 204, 204));
         ingresarCorreo.setText("Ingrese su nombre completo");
         ingresarCorreo.setBorder(null);
-        jPanel1.add(ingresarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 550, 460, 40));
+        jPanel1.add(ingresarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 410, 460, 40));
 
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 443, 500, 10));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 350, 330, 10));
 
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 590, 500, 10));
+        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 500, 10));
 
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 750, 500, 10));
+        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 570, 500, 10));
 
         jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 590, 500, 10));
+        jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 450, 320, 10));
 
-        ingresarApellidos.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarApellidos.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarApellidos.setForeground(new java.awt.Color(204, 204, 204));
         ingresarApellidos.setText("Ingrese su nombre completo");
         ingresarApellidos.setBorder(null);
-        jPanel1.add(ingresarApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 550, 460, 40));
+        jPanel1.add(ingresarApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 460, 40));
 
-        ingresarContrasena.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        ingresarContrasena.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         ingresarContrasena.setForeground(new java.awt.Color(204, 204, 204));
         ingresarContrasena.setText("jPasswordField1");
         ingresarContrasena.setBorder(null);
@@ -184,45 +187,34 @@ public class registroMejorado extends javax.swing.JFrame {
                 ingresarContrasenaActionPerformed(evt);
             }
         });
-        jPanel1.add(ingresarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 700, -1, -1));
+        jPanel1.add(ingresarContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 530, -1, -1));
 
-        pnlBotonRegistrar.setBackground(new java.awt.Color(183, 13, 30));
-        pnlBotonRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlBotonRegistrar.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlRegistrar.setBackground(new java.awt.Color(183, 13, 30));
+        pnlRegistrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlRegistrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                pnlBotonRegistrarMouseClicked(evt);
+                pnlRegistrarMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pnlBotonRegistrarMouseEntered(evt);
+                pnlRegistrarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                pnlBotonRegistrarMouseExited(evt);
+                pnlRegistrarMouseExited(evt);
             }
         });
-        pnlBotonRegistrar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        pnlRegistrar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Registrar");
-        pnlBotonRegistrar.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 60));
+        pnlRegistrar.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 40));
 
-        jPanel1.add(pnlBotonRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 780, 230, 60));
+        jPanel1.add(pnlRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 600, 130, 40));
 
         jPanel3.setBackground(new java.awt.Color(183, 13, 30));
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 25, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 920, 1110, 25));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 690, 960, 25));
 
         jPanel4.setBackground(new java.awt.Color(183, 13, 30));
 
@@ -230,19 +222,19 @@ public class registroMejorado extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1410, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 25, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 960, 1410, 25));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 730, 1200, 25));
 
         jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 443, 500, 10));
+        jPanel1.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 350, 500, 10));
 
-        botonIniciarSesion.setFont(new java.awt.Font("Segoe UI Black", 0, 19)); // NOI18N
+        botonIniciarSesion.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         botonIniciarSesion.setForeground(new java.awt.Color(0, 76, 156));
         botonIniciarSesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         botonIniciarSesion.setText("Iniciar Sesión");
@@ -252,12 +244,12 @@ public class registroMejorado extends javax.swing.JFrame {
                 botonIniciarSesionMouseClicked(evt);
             }
         });
-        jPanel1.add(botonIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 850, 180, 30));
+        jPanel1.add(botonIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 640, 120, 30));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 19)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("¿Ya te registraste?");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 850, 220, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 640, 170, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -267,7 +259,9 @@ public class registroMejorado extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -281,17 +275,17 @@ public class registroMejorado extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ingresarContrasenaActionPerformed
 
-    private void pnlBotonRegistrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlBotonRegistrarMouseEntered
-       pnlBotonRegistrar.setBackground(new Color(204, 14, 33));
-    }//GEN-LAST:event_pnlBotonRegistrarMouseEntered
+    private void pnlRegistrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRegistrarMouseEntered
+       pnlRegistrar.setBackground(new Color(204, 14, 33));
+    }//GEN-LAST:event_pnlRegistrarMouseEntered
 
-    private void pnlBotonRegistrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlBotonRegistrarMouseExited
-        pnlBotonRegistrar.setBackground(new Color(183, 13, 30));
-    }//GEN-LAST:event_pnlBotonRegistrarMouseExited
+    private void pnlRegistrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRegistrarMouseExited
+        pnlRegistrar.setBackground(new Color(183, 13, 30));
+    }//GEN-LAST:event_pnlRegistrarMouseExited
 
-    private void pnlBotonRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlBotonRegistrarMouseClicked
+    private void pnlRegistrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRegistrarMouseClicked
         // aqui el comportamiento cuando le des click a registrar
-    }//GEN-LAST:event_pnlBotonRegistrarMouseClicked
+    }//GEN-LAST:event_pnlRegistrarMouseClicked
 
     private void botonIniciarSesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonIniciarSesionMouseClicked
         // aqui el comportamiento cuando quieras retroceder al inicio de sesion
@@ -405,6 +399,6 @@ public class registroMejorado extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JPanel pnlBotonRegistrar;
+    private javax.swing.JPanel pnlRegistrar;
     // End of variables declaration//GEN-END:variables
 }
