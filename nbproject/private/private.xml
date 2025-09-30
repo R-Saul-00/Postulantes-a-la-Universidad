@@ -3,17 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteServicios/ServicioRegistrarPostulante.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paquetePersistencia/ConecBasePrueba.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paquetePersistencia/TestConexion.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paquetePersistencia/DEAPrueba.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paquetePersistencia/ConectorServidorBD.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteInterfacesPostulantes/registroUsuario.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteServicios/Postulante.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteInterfacesPostulantes/Menu.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteInterfacesPostulantes/InicioDeSesion.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteServicios/ServicioAutenticarPostulante.java</file>
-            <file>file:/C:/Users/rodri/Documents/NetBeansProjects/PostulantesUniversidad/src/paqueteInterfacesPostulantes/VentanaQrGenerado.java</file>
+            <file>file:/F:/scripts/Postulantes-a-la-Universidad/src/interfazRegistro/RegistroPostulanteForm.java</file>
         </group>
     </open-files>
 </project-private>

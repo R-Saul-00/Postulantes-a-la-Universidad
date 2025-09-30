@@ -154,80 +154,85 @@ public class interfazCarnet extends javax.swing.JFrame {
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // Validar que el carnet no esté vacío
-        String carnet = jTextField1.getText().trim();
-        if (carnet.isEmpty()) {
-            JOptionPane.showMessageDialog(this,
-                "Por favor ingrese el número de carnet",
-                "Campo requerido",
-                JOptionPane.WARNING_MESSAGE);
-            jTextField1.requestFocus();
-            return;
-        }
+    // Validar que el carnet no esté vacío
+    String carnet = jTextField1.getText().trim();
+    if (carnet.isEmpty()) {
+        JOptionPane.showMessageDialog(this,
+            "Por favor ingrese el número de carnet",
+            "Campo requerido",
+            JOptionPane.WARNING_MESSAGE);
+        jTextField1.requestFocus();
+        return;
+    }
+    
+    // Validar que solo contenga números
+    if (!carnet.matches("\\d+")) {
+        JOptionPane.showMessageDialog(this,
+            "El número de carnet debe contener solo dígitos",
+            "Formato inválido",
+            JOptionPane.WARNING_MESSAGE);
+        jTextField1.requestFocus();
+        return;
+    }
+    
+    try {
+        // Buscar el postulante por CI en la base de datos
+        Postulante postulanteEncontrado = objDAO.obtenerPostulantePorCI(carnet);
         
-        // Validar que solo contenga números
-        if (!carnet.matches("\\d+")) {
-            JOptionPane.showMessageDialog(this,
-                "El número de carnet debe contener solo dígitos",
-                "Formato inválido",
-                JOptionPane.WARNING_MESSAGE);
-            jTextField1.requestFocus();
-            return;
-        }
-        
-        try {
-            // Buscar el postulante por CI en la base de datos
-            Postulante postulanteEncontrado = objDAO.obtenerPostulantePorCI(carnet);
+        if (postulanteEncontrado != null) {
+            // POSTULANTE EXISTE - Ir a completar/actualizar datos académicos
+            int opcion = JOptionPane.showConfirmDialog(this,
+                "Postulante encontrado:\n\n" +
+                "Nombre: " + postulanteEncontrado.getNombreCompleto() + "\n" +
+                "CI: " + postulanteEncontrado.getStrNumeroCI() + "\n" +
+                "Correo: " + postulanteEncontrado.getStrCorreoElectronico() + "\n\n" +
+                "¿Desea continuar con el registro de datos académicos?",
+                "Postulante Encontrado",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE);
             
-            if (postulanteEncontrado != null) {
-                // POSTULANTE EXISTE - Ir a completar/actualizar datos académicos
-                int opcion = JOptionPane.showConfirmDialog(this,
-                    "Postulante encontrado:\n\n" +
-                    "Nombre: " + postulanteEncontrado.getNombreCompleto() + "\n" +
-                    "CI: " + postulanteEncontrado.getStrNumeroCI() + "\n" +
-                    "Correo: " + postulanteEncontrado.getStrCorreoElectronico() + "\n\n" +
-                    "¿Desea continuar con el registro de datos académicos?",
-                    "Postulante Encontrado",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.INFORMATION_MESSAGE);
+            if (opcion == JOptionPane.YES_OPTION) {
+                // Crear la ventana de registro
+                RegistroPostulanteForm registro = new RegistroPostulanteForm();
                 
-                if (opcion == JOptionPane.YES_OPTION) {
-                    // Ir a RegistroPostulanteForm con los datos precargados
-                    RegistroPostulanteForm registro = new RegistroPostulanteForm(postulanteEncontrado);
-                    registro.setVisible(true);
-                    registro.setLocationRelativeTo(null);
-                    this.dispose();
-                }
+                // CARGAR LOS DATOS DEL POSTULANTE (esto carga automáticamente sus datos académicos si existen)
+                registro.cargarDatosPostulante(postulanteEncontrado);
                 
-            } else {
-                // POSTULANTE NO EXISTE - Preguntar si desea registrarlo
-                int opcion = JOptionPane.showConfirmDialog(this,
-                    "No se encontró ningún postulante con el carnet: " + carnet + "\n\n" +
-                    "¿Desea registrar un nuevo postulante con este carnet?",
-                    "Postulante No Encontrado",
-                    JOptionPane.YES_NO_OPTION,
-                    JOptionPane.QUESTION_MESSAGE);
-                
-                if (opcion == JOptionPane.YES_OPTION) {
-                    // Ir a RegistroUsuarios para crear nuevo postulante
-                    RegistroUsuarios registro = new RegistroUsuarios();
-                    registro.setVisible(true);
-                    registro.setLocationRelativeTo(null);
-                    this.dispose();
-                } else {
-                    // Limpiar campo y permitir nueva búsqueda
-                    jTextField1.setText("");
-                    jTextField1.requestFocus();
-                }
+                // Mostrar la ventana
+                registro.setVisible(true);
+                registro.setLocationRelativeTo(null);
+                this.dispose();
             }
             
-        } catch (Exception e) {
-            logger.log(java.util.logging.Level.SEVERE, "Error al buscar postulante", e);
-            JOptionPane.showMessageDialog(this, 
-                "Error al buscar en la base de datos:\n" + e.getMessage(),
-                "Error", JOptionPane.ERROR_MESSAGE);
+        } else {
+            // POSTULANTE NO EXISTE - Preguntar si desea registrarlo
+            int opcion = JOptionPane.showConfirmDialog(this,
+                "No se encontró ningún postulante con el carnet: " + carnet + "\n\n" +
+                "¿Desea registrar un nuevo postulante con este carnet?",
+                "Postulante No Encontrado",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+            
+            if (opcion == JOptionPane.YES_OPTION) {
+                // Ir a RegistroUsuarios para crear nuevo postulante
+                RegistroUsuarios registro = new RegistroUsuarios();
+                registro.setVisible(true);
+                registro.setLocationRelativeTo(null);
+                this.dispose();
+            } else {
+                // Limpiar campo y permitir nueva búsqueda
+                jTextField1.setText("");
+                jTextField1.requestFocus();
+            }
         }
+        
+    } catch (Exception e) {
+        logger.log(java.util.logging.Level.SEVERE, "Error al buscar postulante", e);
+        JOptionPane.showMessageDialog(this, 
+            "Error al buscar en la base de datos:\n" + e.getMessage(),
+            "Error", JOptionPane.ERROR_MESSAGE);
     }
+}
 
     private void jButtonAtrasActionPerformed(java.awt.event.ActionEvent evt) {
         try {
