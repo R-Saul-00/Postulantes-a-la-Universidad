@@ -1,4 +1,4 @@
-package paqueteInterfacesPostulantes;
+package paqueteInterfacesPostulantess;
 
 import java.awt.Color;
 import java.util.logging.Level;

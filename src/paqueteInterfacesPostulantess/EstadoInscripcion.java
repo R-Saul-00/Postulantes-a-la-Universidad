@@ -1,4 +1,4 @@
-package paqueteInterfacesPostulantes;
+package paqueteInterfacesPostulantess;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;

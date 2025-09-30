@@ -1,4 +1,4 @@
-package paqueteInterfacesPostulantes;
+package paqueteInterfacesPostulantess;
 
 import paqueteUtilidades.GeneradorDeQR;
 import paqueteServicios.Postulante;

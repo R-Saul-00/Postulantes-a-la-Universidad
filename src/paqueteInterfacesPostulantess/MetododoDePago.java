@@ -1,4 +1,4 @@
-package paqueteInterfacesPostulantes;
+package paqueteInterfacesPostulantess;
 
 import java.awt.Color;
 import java.awt.BorderLayout;
@@ -308,8 +308,8 @@ public class MetododoDePago extends javax.swing.JFrame {
         this.dispose();
 
         SwingUtilities.invokeLater(() -> {
-            paqueteInterfacesPostulantes.Menu objVentanaMenu = 
-                    new paqueteInterfacesPostulantes.Menu(this.objPostulante, this.objRegistroDocumentacion);
+            paqueteInterfacesPostulantess.Menu objVentanaMenu = 
+                    new paqueteInterfacesPostulantess.Menu(this.objPostulante, this.objRegistroDocumentacion);
             
             objVentanaMenu.setVisible(true);
         });
